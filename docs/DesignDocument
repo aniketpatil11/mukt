@@ -1,0 +1,24 @@
+Mukt Design Document
+
+
+Questions to go over:
+
+1.  How will the program run?
+  a. Will a config file of some sort be parsed before hand?
+    i. If so, what type of options will be passed as parameters?
+
+2. Plugin loading.
+  a. Should we write something of a module loader? We can get the return of
+functions passed along as function pointers, as the functions manipulate
+the backend.
+
+3. Arguments passed to the editor:
+  example:
+    mukt foo.txt                              # this will open up foo.txt
+    mukt -C=customConfigFilepath.conf foo.txt # This will open up foo.txt with
+                                              # the configuration from the
+                                              # filepath.
+
+  Whats your thoughts on this?
+
+4. Types of options we will be implementing and how to go about them.
